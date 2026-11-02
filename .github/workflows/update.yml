@@ -1,0 +1,36 @@
+name: Update checkpoints
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-checkpoints
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Check the engine files
+        run: cd engine && sha256sum -c SHA256SUMS
+      - name: Read, check and add new checkpoints
+        run: node update.mjs
+      - name: Commit new checkpoints
+        run: |
+          if [ -n "$(git status --porcelain anchors anchors.json)" ]; then
+            git config user.name "xmr20project"
+            git config user.email "337930954+xmr20project@users.noreply.github.com"
+            git add anchors anchors.json
+            git commit -m "Checkpoint $(node -p "require('./anchors.json').latest")"
+            git push
+          fi

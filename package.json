@@ -1,0 +1,8 @@
+{
+ "name": "xmr20-checkpoints",
+ "private": true,
+ "type": "module",
+ "description": "Daily signed XMR20 token-ledger checkpoints and a checker that verifies them against the Monero chain",
+ "engines": {"node": ">=20"},
+ "scripts": {"verify": "node verify.mjs", "update": "node update.mjs"}
+}
