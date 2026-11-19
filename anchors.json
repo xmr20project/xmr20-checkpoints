@@ -2,8 +2,48 @@
  "network": "mainnet",
  "every": 720,
  "depth": 25,
- "latest": 3805920,
+ "latest": 3808800,
  "checkpoints": [
+  {
+   "height": 3808800,
+   "blockHash": "d146575031d884556fbe75ed2f5a00a4e095944126d00047e1c80a8b1d0dd4f7",
+   "records": 42,
+   "listHash": "d9f474721de22b491c7c0438b59d42ffb7917db99aed54550e98ee375baff992",
+   "anchorTx": "b5555bbb9d8144824e475c197d1611755c4c9b564bcfe2077da41a905b92a740",
+   "postedAt": "2026-11-18T04:37:54.705Z",
+   "anchorBlock": 3808827,
+   "checkedOn": "https://xmr-node.cakewallet.com:18081"
+  },
+  {
+   "height": 3808080,
+   "blockHash": "96adc7e7a49429b07b4891f35d51ffbb57bbfa1793efbf4db2e1a5a0840ee047",
+   "records": 42,
+   "listHash": "d9f474721de22b491c7c0438b59d42ffb7917db99aed54550e98ee375baff992",
+   "anchorTx": "10b150fb19a257d46bc20c4548a8c4f547183271f1f94b60a72afd396a6514c3",
+   "postedAt": "2026-11-17T03:14:53.574Z",
+   "anchorBlock": 3808106,
+   "checkedOn": "https://xmr-node.cakewallet.com:18081"
+  },
+  {
+   "height": 3807360,
+   "blockHash": "4e9ec2919a6ed2e99ba5e66f04899f62bc35dfcf79d77195ad899cecd809e58b",
+   "records": 42,
+   "listHash": "d9f474721de22b491c7c0438b59d42ffb7917db99aed54550e98ee375baff992",
+   "anchorTx": "bc445d4b84943172fdeb1b628dd8d792900253597ae3b7e86c32a61c08af651d",
+   "postedAt": "2026-11-16T03:57:49.459Z",
+   "anchorBlock": 3807387,
+   "checkedOn": "https://xmr-node.cakewallet.com:18081"
+  },
+  {
+   "height": 3806640,
+   "blockHash": "a17864fdc21bf5818c3decd6fd76a250a1fa325ab89e1b54ecbcacf7cc54b27b",
+   "records": 33,
+   "listHash": "a0db4aedc556fa4e25c969af81e853fcb10ff3e19418f3414982d322efe0dffd",
+   "anchorTx": "b707f6a7e7ef992e1bd738cc40c15eaa9eb01787d66a80cab07d4636e46ab3f0",
+   "postedAt": "2026-11-15T03:35:13.190Z",
+   "anchorBlock": 3806668,
+   "checkedOn": "https://xmr-node.cakewallet.com:18081"
+  },
   {
    "height": 3805920,
    "blockHash": "dfe3f1e644578ea2eacce65a39f781ab97e0ecbd50e1597712abf41b71c71304",
