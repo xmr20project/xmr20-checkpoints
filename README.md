@@ -52,7 +52,7 @@ For each checkpoint it checks that:
 | `anchors.json` | Index of all checkpoints, newest first. |
 | `verify.mjs` | The checker described above. |
 | `update.mjs`, `.github/workflows/update.yml` | Every 6 hours: read new checkpoints from the XMR20 bridge (`api.xmr20.org`), check each one on a public Monero node, add it. A checkpoint that fails the check is not added. |
-| `engine/holder.wasm` | The XMR20 token engine, the same code the XMR20 wallets run (build paths removed); used here only for the signature and record checks. |
+| `engine/holder.wasm` | The XMR20 token engine, byte for byte the `engine/holder-wasm/holder.wasm` that the XMR20 wallets run ([xmr20-wallets](https://github.com/xmr20project/xmr20-wallets)); used here only for the signature and record checks. It reads every record type, including Monero Market trade records (`XT1`, from block 3,797,400). |
 | `engine/manifest.json` | The public mainnet parameters (issuer key, ledger domain). |
 | `engine/SHA256SUMS` | Hashes of the two engine files. |
 
