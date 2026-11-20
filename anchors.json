@@ -2,8 +2,18 @@
  "network": "mainnet",
  "every": 720,
  "depth": 25,
- "latest": 3809520,
+ "latest": 3810240,
  "checkpoints": [
+  {
+   "height": 3810240,
+   "blockHash": "9cad2dd213b89e27639e9ea6a4768872027d3d77485f602e5305d3623f18ce04",
+   "records": 42,
+   "listHash": "d9f474721de22b491c7c0438b59d42ffb7917db99aed54550e98ee375baff992",
+   "anchorTx": "fce6bdb410e424c16690cc7a5249f36e1672cacba1939d712230ace26ef2ef67",
+   "postedAt": "2026-11-20T05:23:46.876Z",
+   "anchorBlock": 3810267,
+   "checkedOn": "https://xmr-node.cakewallet.com:18081"
+  },
   {
    "height": 3809520,
    "blockHash": "46c78bf46623c0d65e6ba922954436a7589540a24e6a627853a84268b65331a7",
